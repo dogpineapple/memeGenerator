@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme Generator</title>
+    <link rel="stylesheet" href="meme-css.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="banner">
+        <div>
+            <h1>Meme Me</h1>
+        </div>
+        <div>
+            <div class="banner-info">Put in an image URL, a top and bottom text, then submit!</div>
+        </div>
+        <div>
+            <form>
+                <label for="imageURL">Image URL</label>
+                <input type="text" name="imageURL" id="imageURL"><br>
+                <label for="topText">Top Text</label>
+                <input type="text" name="topText" id="topText"><br>
+                <label for="bottomText">Bottom Text</label>
+                <input type="text" name="bottomText" id="bottomText"><br>
+                <input class="submit-button" type="submit" value="Generate">
+            </form>
+            <br>
+        </div>
+    </header>
+    <section>
+        <div id="meme-collection">
+            <!-- This is where the images will be appended to -->
+        </div>
+    </section>
+
+    <!-- Button for the scroll icon -->
+    <button class="scroll-up"><svg class="bi bi-chevron-up" width="2em" height="2em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 01.708 0l6 6a.5.5 0 01-.708.708L8 5.707l-5.646 5.647a.5.5 0 01-.708-.708l6-6z" clip-rule="evenodd"/>
+    </svg></button>
+   
+   
+    <script src="meme-app.js"></script>
+</body>
+</html>
